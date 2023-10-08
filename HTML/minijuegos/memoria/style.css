@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+}
+.containerMain{
+}
+.containerC{
+    perspective: 900px;
+    margin-top: 5vmin;
+    margin-bottom: 5vmin;
+    padding: 2vmin;
+    height: 60vmin;
+}
+.cart{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform .8s;
+    transform-style: preserve-3d;
+}
+.front,.back{
+    height: 100%;
+    width: 100%;
+    border-radius: 2.5vmin;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+    color: rgb(211,211,211);
+}
+.front{
+    background-color: rgb(227, 227, 227);
+    background-image: url(imgs/question-square-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.back{
+    transform: rotateY(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
